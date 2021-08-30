@@ -1,0 +1,125 @@
+#tm_builder_outer_content {
+
+	.tm_pb_posts.tm_pb_module {
+
+		.tm_codeboltposts_title_group {
+
+			.tm_codeboltposts_supertitle { }
+
+			.tm_codeboltposts_title { }
+
+			.tm_codeboltposts_title_divider {
+				max-width: 100%;
+				background: $color__background-hr;
+			}
+
+			.tm_codeboltposts_subtitle { }
+
+			> *:last-child {
+				margin-bottom: 40px;
+			}
+
+		}
+
+		.tm_codeboltposts_listing { }
+
+		.tm_codeboltposts_layout-1,
+		.tm_codeboltposts_layout-2 {
+			.tm_pb_column {
+				display: flex;
+			}
+			.tm_codeboltposts_item {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+
+		.tm_codeboltposts_layout-1 {
+			.tm_codeboltposts_item {
+				.tm_codeboltposts_img img{}
+			}
+		}
+
+		.tm_codeboltposts_layout-2 {
+			.tm_codeboltposts_item {
+				.posts_item_content_footer {
+					padding-top: 15px;
+					margin-top: 15px;
+					border-top: 1px solid $color__background-hr;
+					@include media-breakpoint-up(lg) {
+						padding-top: 30px;
+						margin-top: 30px;
+					}
+				}
+				.tm_codeboltposts_more-btn {
+					margin-top: 15px;
+				}
+			}
+		}
+
+		.tm_codeboltposts_layout-3 {
+			.tm_codeboltposts_item {
+				margin-bottom: 0;
+				.tm_codeboltposts_item_content {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					padding: 30px 20px 20px;
+					@include media-breakpoint-up(xl) {
+						padding: 35px 40px;
+						min-height: 195px;
+					}
+				}
+				.tm_codeboltposts_item_title {
+					margin-top: 0;
+					@include media-breakpoint-between(xs, lg) {
+						@include font-size(1);
+					}
+				}
+				.tm_codeboltposts_more-btn {
+					margin-top: 10px;
+				}
+			}
+		}
+
+		.tm_codeboltposts_item {
+			margin-bottom: 46px;
+
+			.tm_codeboltposts_img {
+				display: block;
+			}
+
+			.tm_codeboltposts_item_title {
+				margin-bottom: 0;
+				margin-top: 15px;
+				@include media-breakpoint-up(md) {
+					margin-top: 32px;
+				}
+			}
+
+			.tm_codeboltposts_item_meta {
+				padding: 0;
+				> * {
+					margin-left: 0;
+				}
+			}
+
+			.tm_codeboltposts_item_excerpt {
+				margin-top: 12px;
+				padding-bottom: 0;
+			}
+			.posts_item_content_footer {
+				margin-top: 0;
+			}
+
+		}
+		.tm_codeboltposts_button_wrap { }
+		.tm_codeboltpb-spinner-double-bounce.tm_codeboltpb-spinner {
+			margin: -20px 0 0 15px;
+		}
+	}
+
+}

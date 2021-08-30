@@ -1,0 +1,110 @@
+.contact-block {
+	&__inner {
+		@include grid-indent(20px);
+		display: flex;
+		flex-direction: column;
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.site-footer.style-2 & {
+			flex-direction: column;
+			align-items: center;
+		}
+		.site-header & {
+			@include media-breakpoint-up(md) {
+				flex-direction: row;
+				flex-wrap: wrap;
+				@include grid-indent(10px);
+			}
+			@include media-breakpoint-up(xl) {
+				@include grid-indent(13px);
+			}
+		}
+	}
+	&__item {
+		padding: 5px 13px;
+		position: relative;
+
+		.site-header & {
+			@include media-breakpoint-up(md) {
+				padding: 5px 10px;
+
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 5px 13px;
+			}
+		}
+		.site-footer.style-2 & {
+			border-right: none;
+		}
+
+		& + .contact-block__item {
+			.site-header & {
+				margin-top: 10px;
+				@include media-breakpoint-up(md) {
+					margin-top: 0;
+				}
+			}
+			.site-footer.style-2 & {
+				margin-top: 1px;
+			}
+		}
+
+		a {
+			display: inline-block;
+		}
+		&--icon {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		&:not(.contact-block__item--icon) {
+			text-align: center;
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+			}
+		}
+	}
+	&__icon {
+		@include font-size(1.25);
+		margin-right: 13px;
+		.site-header & {
+			@include media-breakpoint-only(md) {
+				margin-right: 10px;
+			}
+		}
+	}
+	&__text {
+		text-align: left;
+	}
+	&__label {
+		padding-right: 4px;
+	}
+	&__text,
+	&__label {
+		.site-header & {
+			line-height: 1.5;
+			@include font-size(.75);
+		}
+
+		.site-header .header-container & {
+			display: block;
+		}
+		.top-panel & {
+			display: block;
+			@include media-breakpoint-up(md) {
+				display: inline-block;
+			}
+		}
+	}
+
+}
+
+.site-header {
+	.contact-block__text,
+	.contact-block__label{
+		@include font-size(1);
+	}
+}

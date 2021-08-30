@@ -1,0 +1,61 @@
+.sticky {
+	display: block;
+	&__label {
+		display: block;
+		text-align: center;
+		border-radius: 30px;
+		margin-right: 11px;
+		margin-top: 3px;
+		float: left;
+		i {
+			width: 30px;
+			height: 30px;
+			font-size: 20px;
+			line-height: 28px;
+			display: block;
+		}
+		&.type-label,
+		&.type-both {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&.type-both {
+			i {
+				display: inline-block;
+				margin-right: 5px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.isStuck {
+	@include media-breakpoint-up(md) {
+		position: fixed !important;
+		z-index: 1000;
+		margin: 0 !important;
+		transform: none;
+
+		&#main-menu {
+			position: fixed !important;
+			right: 0;
+			left: 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background: #fff;
+			width: 100%;
+			justify-content: center;
+		}
+
+		&.vertical-toggle {
+			top: 30px !important;
+
+			.site-header.style-3 & {
+				right: 25px;
+			}
+			.site-header.style-7 & {
+				left: 25px;
+			}
+		}
+	}
+}

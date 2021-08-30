@@ -1,0 +1,31 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}
+
+.sidebar .widget, .tm_pb_column_1_4 .widget,
+.tm_pb_column_1_3 .widget,
+.footer-area:not(.footer-area--fullwidth) .widget{
+	font-size: @font_size($body_font_size, multiple, ceil, 0.8888)px;
+}
+
+.footer-area-wrap a,
+.footer-area-wrap.invert .widget_recent_comments a:hover{
+	color: $regular_accent_color_1;
+}
+
+.footer-area-wrap a:hover {
+	color: $invert_text_color;
+}
+
+.footer-menu{
+	font-family: $h1_font_family;
+}
+
+.site-footer.default .footer-area-wrap + .footer-container:before{
+	max-width: calc(($container_width - 50)*1px);
+	border-top-color: @alpha($invert_text_color, 20);
+}

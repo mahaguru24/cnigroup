@@ -1,0 +1,286 @@
+$loader-width: 56px;
+$border-width: 48px;
+
+.page-preloader-cover {
+	position: fixed;
+	z-index: 1200;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: $color__bg-preloader-cover;
+}
+
+.preloader-boxes {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-$loader-width, -$border-width);
+	-o-transform: translate(-$loader-width, -$border-width);
+	-ms-transform: translate(-$loader-width, -$border-width);
+	-webkit-transform: translate(-$loader-width, -$border-width);
+	-moz-transform: translate(-$loader-width, -$border-width);
+}
+
+.preloader-box {
+	width: $border-width;
+	height: $loader-width;
+	position: absolute;
+	transition: all ease 0.225s;
+	-o-transition: all ease 0.225s;
+	-ms-transition: all ease 0.225s;
+	-webkit-transition: all ease 0.225s;
+	-moz-transition: all ease 0.225s;
+}
+
+.preloader-box1 {
+	animation: cssload-tetromino1 1.125s ease-out infinite;
+	-o-animation: cssload-tetromino1 1.125s ease-out infinite;
+	-ms-animation: cssload-tetromino1 1.125s ease-out infinite;
+	-webkit-animation: cssload-tetromino1 1.125s ease-out infinite;
+	-moz-animation: cssload-tetromino1 1.125s ease-out infinite;
+}
+
+.preloader-box2 {
+	animation: cssload-tetromino2 1.125s ease-out infinite;
+	-o-animation: cssload-tetromino2 1.125s ease-out infinite;
+	-ms-animation: cssload-tetromino2 1.125s ease-out infinite;
+	-webkit-animation: cssload-tetromino2 1.125s ease-out infinite;
+	-moz-animation: cssload-tetromino2 1.125s ease-out infinite;
+}
+
+.preloader-box3 {
+	animation: cssload-tetromino3 1.125s ease-out infinite;
+	-o-animation: cssload-tetromino3 1.125s ease-out infinite;
+	-ms-animation: cssload-tetromino3 1.125s ease-out infinite;
+	-webkit-animation: cssload-tetromino3 1.125s ease-out infinite;
+	-moz-animation: cssload-tetromino3 1.125s ease-out infinite;
+	z-index: 2;
+}
+
+.preloader-box4 {
+	animation: cssload-tetromino4 1.125s ease-out infinite;
+	-o-animation: cssload-tetromino4 1.125s ease-out infinite;
+	-ms-animation: cssload-tetromino4 1.125s ease-out infinite;
+	-webkit-animation: cssload-tetromino4 1.125s ease-out infinite;
+	-moz-animation: cssload-tetromino4 1.125s ease-out infinite;
+}
+
+
+
+
+
+
+
+
+
+@keyframes cssload-tetromino1 {
+	0%, 40% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(24px, -13px);
+	}
+	60%, 100% {
+		transform: translate($border-width, 0);
+	}
+}
+
+@-o-keyframes cssload-tetromino1 {
+	0%, 40% {
+		-o-transform: translate(0, 0);
+	}
+	50% {
+		-o-transform: translate(24px, -13px);
+	}
+	60%, 100% {
+		-o-transform: translate($border-width, 0);
+	}
+}
+
+@-ms-keyframes cssload-tetromino1 {
+	0%, 40% {
+		-ms-transform: translate(0, 0);
+	}
+	50% {
+		-ms-transform: translate(24px, -13px);
+	}
+	60%, 100% {
+		-ms-transform: translate($border-width, 0);
+	}
+}
+
+@-webkit-keyframes cssload-tetromino1 {
+	0%, 40% {
+		-webkit-transform: translate(0, 0);
+	}
+	50% {
+		-webkit-transform: translate(24px, -13px);
+	}
+	60%, 100% {
+		-webkit-transform: translate($border-width, 0);
+	}
+}
+
+@-moz-keyframes cssload-tetromino1 {
+	0%, 40% {
+		-moz-transform: translate(0, 0);
+	}
+	50% {
+		-moz-transform: translate(24px, -13px);
+	}
+	60%, 100% {
+		-moz-transform: translate($border-width, 0);
+	}
+}
+
+@keyframes cssload-tetromino2 {
+	0%, 20% {
+		transform: translate($border-width, 0px);
+	}
+	40%, 100% {
+		transform: translate(72px, 13px);
+	}
+}
+
+@-o-keyframes cssload-tetromino2 {
+	0%, 20% {
+		-o-transform: translate($border-width, 0px);
+	}
+	40%, 100% {
+		-o-transform: translate(72px, 13px);
+	}
+}
+
+@-ms-keyframes cssload-tetromino2 {
+	0%, 20% {
+		-ms-transform: translate($border-width, 0px);
+	}
+	40%, 100% {
+		-ms-transform: translate(72px, 13px);
+	}
+}
+
+@-webkit-keyframes cssload-tetromino2 {
+	0%, 20% {
+		-webkit-transform: translate($border-width, 0px);
+	}
+	40%, 100% {
+		-webkit-transform: translate(72px, 13px);
+	}
+}
+
+@-moz-keyframes cssload-tetromino2 {
+	0%, 20% {
+		-moz-transform: translate($border-width, 0px);
+	}
+	40%, 100% {
+		-moz-transform: translate(72px, 13px);
+	}
+}
+
+@keyframes cssload-tetromino3 {
+	0% {
+		transform: translate(72px, 13px);
+	}
+	20%, 60% {
+		transform: translate($border-width, 27px);
+	}
+	90%, 100% {
+		transform: translate(24px, 13px);
+	}
+}
+
+@-o-keyframes cssload-tetromino3 {
+	0% {
+		-o-transform: translate(72px, 13px);
+	}
+	20%, 60% {
+		-o-transform: translate($border-width, 27px);
+	}
+	90%, 100% {
+		-o-transform: translate(24px, 13px);
+	}
+}
+
+@-ms-keyframes cssload-tetromino3 {
+	0% {
+		-ms-transform: translate(72px, 13px);
+	}
+	20%, 60% {
+		-ms-transform: translate($border-width, 27px);
+	}
+	90%, 100% {
+		-ms-transform: translate(24px, 13px);
+	}
+}
+
+@-webkit-keyframes cssload-tetromino3 {
+	0% {
+		-webkit-transform: translate(72px, 13px);
+	}
+	20%, 60% {
+		-webkit-transform: translate($border-width, 27px);
+	}
+	90%, 100% {
+		-webkit-transform: translate(24px, 13px);
+	}
+}
+
+@-moz-keyframes cssload-tetromino3 {
+	0% {
+		-moz-transform: translate(72px, 13px);
+	}
+	20%, 60% {
+		-moz-transform: translate($border-width, 27px);
+	}
+	90%, 100% {
+		-moz-transform: translate(24px, 13px);
+	}
+}
+
+@keyframes cssload-tetromino4 {
+	0%, 60% {
+		transform: translate(24px, 13px);
+	}
+	90%, 100% {
+		transform: translate(0, 0);
+	}
+}
+
+@-o-keyframes cssload-tetromino4 {
+	0%, 60% {
+		-o-transform: translate(24px, 13px);
+	}
+	90%, 100% {
+		-o-transform: translate(0, 0);
+	}
+}
+
+@-ms-keyframes cssload-tetromino4 {
+	0%, 60% {
+		-ms-transform: translate(24px, 13px);
+	}
+	90%, 100% {
+		-ms-transform: translate(0, 0);
+	}
+}
+
+@-webkit-keyframes cssload-tetromino4 {
+	0%, 60% {
+		-webkit-transform: translate(24px, 13px);
+	}
+	90%, 100% {
+		-webkit-transform: translate(0, 0);
+	}
+}
+
+@-moz-keyframes cssload-tetromino4 {
+	0%, 60% {
+		-moz-transform: translate(24px, 13px);
+	}
+	90%, 100% {
+		-moz-transform: translate(0, 0);
+	}
+}

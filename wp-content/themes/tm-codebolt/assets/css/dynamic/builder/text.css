@@ -1,0 +1,10 @@
+.tm_pb_text h4:before,
+.tm_pb_text h2:before,
+.tm_pb_text h6:before{
+	background-color: $regular_accent_color_1;
+}
+.invert .tm_pb_text h4:before,
+.invert .tm_pb_text h2:before,
+.invert .tm_pb_text h6:before{
+	background-color: $invert_text_color;
+}

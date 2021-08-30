@@ -1,0 +1,52 @@
+/* #Paginations */
+.site-content .page-links a,
+.site-content .page-numbers,
+#tm_builder_outer_content .pagination .page-numbers {
+	background-color: $invert_accent_color_1;
+	border-color: $invert_accent_color_1;
+}
+
+.site-content .page-numbers.next,
+.site-content .page-numbers.prev,
+#tm_builder_outer_content .pagination .page-numbers.next,
+#tm_builder_outer_content .pagination .page-numbers.prev {
+	color: $regular_link_hover_color;
+}
+
+.site-content .page-numbers.next:hover,
+.site-content .page-numbers.prev:hover,
+#tm_builder_outer_content .pagination .page-numbers.next:hover,
+#tm_builder_outer_content .pagination .page-numbers.prev:hover{
+	color: $regular_link_color;
+}
+
+.site-content .page-numbers,
+.site-content .page-numbers:hover{
+	color: $regular_text_color;
+}
+
+/* #Breadcrumbs */
+.breadcrumbs:before{
+	background: linear-gradient(to bottom, @darken($regular_accent_color_3, 12%), @lighten($regular_accent_color_3, 2%));
+}
+.breadcrumbs__item {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	letter-spacing: $breadcrumbs_letter_spacing{em};
+}
+
+.breadcrumbs__item-target {
+	color: $regular_link_hover_color;
+}
+
+.breadcrumbs .breadcrumbs__item a,
+.breadcrumbs .breadcrumbs__item-target{
+	color: $regular_text_color;
+}
+
+.breadcrumbs .breadcrumbs__item a:hover{
+	color: $regular_accent_color_1
+}

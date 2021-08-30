@@ -1,0 +1,62 @@
+/* #Elements */
+blockquote {
+	color: $regular_text_color;
+	font-size: $body_font_size{px};
+	line-height: $body_line_height;
+	font-family: $body_font_family;
+	font-weight: $body_font_weight;
+}
+
+blockquote:before {
+	color: $regular_accent_color_1;
+}
+
+blockquote cite {
+	font-size: $body_font_size{px};
+	line-height: $body_line_height;
+	font-family: $body_font_family;
+	font-weight: $body_font_weight;
+	color: $regular_text_color;
+}
+
+code {
+	color: $invert_text_color;
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+	font-family: @font_family( $body_font_family );
+}
+
+.single-post .post > .entry-content > p:first-of-type:first-letter,
+.dropcaps {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+/*List*/
+.entry-content ol >li:before,
+.site-main ol >li:before,
+.entry-content ul:not([class]) > li:before,
+.site-main ul:not([class]) > li:before {
+	color: $regular_accent_color_2;
+}
+
+ul li:before{
+	background-color: $regular_accent_color_1;
+}
+
+
+/* Page preloader */
+.preloader-boxes svg polygon {
+	fill: $regular_accent_color_1;
+}
+.preloader-boxes svg polyline:nth-of-type(2) {
+	fill:@alpha($invert_text_color, 50);
+}
+
+.preloader-boxes svg polyline:nth-of-type(1) {
+	fill: $invert_text_color;
+}
+
+.page-title:before{
+	background: $regular_accent_color_1;
+}
